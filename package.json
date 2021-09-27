@@ -19,5 +19,6 @@
   "bin": {
     "spanner-ddl-patch": "./dist/cli.js"
   },
-  "name": "spanner-ddl-patch"
+  "name": "spanner-ddl-patch",
+  "version": "0.0.1"
 }
