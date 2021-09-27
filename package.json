@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "yargs": "^17.2.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.174",
+    "@types/yargs": "^17.0.3",
+    "peggy": "^1.2.0",
+    "ts-node": "^10.2.1",
+    "ts-pegjs": "^1.2.1",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "prepare": "yarn run build",
+    "build": "tsc && chmod a+x ./dist/cli.js",
+    "build:parser": "yarn peggy --plugin ./node_modules/ts-pegjs/src/tspegjs.js -o ./src/parser/parser.gen.ts ./src/parser/parser.ddl"
+  },
+  "bin": {
+    "spanner-ddl-patch": "./dist/cli.js"
+  },
+  "name": "spanner-ddl-patch"
+}
