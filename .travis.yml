@@ -7,8 +7,8 @@ before_install: # if "install" is overridden
   - sudo apt-get update -qq
   - sudo apt-get install -y -qq yarn
   - sudo apt-get install -y nodejs-dev
-  - nvm install 10
-  - nvm use 10
+  - nvm install 12
+  - nvm use 12
 cache:
   yarn: true
 install: 
