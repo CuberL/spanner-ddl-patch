@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "jest": "^27.2.2",
     "lodash": "^4.17.21",
     "yargs": "^17.2.1"
   },
@@ -15,7 +16,8 @@
   "scripts": {
     "prepare": "yarn run build",
     "build": "tsc && chmod a+x ./dist/cli.js",
-    "build:parser": "yarn peggy --plugin ./node_modules/ts-pegjs/src/tspegjs.js -o ./src/parser/parser.gen.ts ./src/parser/parser.ddl"
+    "build:parser": "yarn peggy --plugin ./node_modules/ts-pegjs/src/tspegjs.js -o ./src/parser/parser.gen.ts ./src/parser/parser.ddl",
+    "test": "yarn jest --passWithNoTests"
   },
   "bin": {
     "spanner-ddl-patch": "./dist/cli.js"
