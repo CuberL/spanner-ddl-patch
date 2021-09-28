@@ -37,7 +37,7 @@ Output:
 ``` sql
 alter table users add column avatar string(max);
 alter table users alter column name string(1024);
-alter table drop column age;
+alter table users drop column age;
 ```
 
 ## Known issues

@@ -67,7 +67,7 @@ const main = () => {
     })
 
     const redundant_column_ddls = redundant_columns.map(column => {
-        return `alter table drop column ${column.name};`
+        return `alter table ${dst_ddl_parsed.table_name} drop column  ${column.name};`
     });
 
     process.stdout.write([
