@@ -23,5 +23,5 @@
     "spanner-ddl-patch": "./dist/cli.js"
   },
   "name": "spanner-ddl-patch",
-  "version": "0.0.7"
+  "version": "0.0.8"
 }
