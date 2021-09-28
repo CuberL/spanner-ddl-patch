@@ -4,7 +4,7 @@ A tool to generate ddl base on source ddl and destination ddl. It can calculate 
 
 ## Usage
 
-Prepare a src.ddl
+Prepare a src.sql
 
 ```sql
 CREATE TABLE users (
@@ -16,7 +16,7 @@ CREATE TABLE users (
 
 ```
 
-Prepare a dst.ddl
+Prepare a dst.sql
 ```sql
 CREATE TABLE users (
     user_id STRING(32),
@@ -30,7 +30,7 @@ Then install and run the tool
 
 ``` shell
 yarn global add spanner-ddl-patch
-spanner-ddl-patch --src ./src.ddl --dst ./dst.ddl
+spanner-ddl-patch --src ./src.sql --dst ./dst.sql
 ```
 
 Output: 
