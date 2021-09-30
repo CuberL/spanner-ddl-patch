@@ -1,5 +1,9 @@
 # Spanner DDL patch file generator
 
+[![Build Status](https://img.shields.io/travis/cuberl/spanner-ddl-patch)](https://travis-ci.org/CuberL/spanner-ddl-patch)
+[![License](https://img.shields.io/github/license/cuberl/spanner-ddl-patch?color=blue)](https://github.com/CuberL/spanner-ddl-patch/blob/master/LICENSE)
+[![Version](https://img.shields.io/npm/v/spanner-ddl-patch)](https://www.npmjs.com/package/spanner-ddl-patch)
+
 A tool to generate ddl base on source ddl and destination ddl. It can calculate difference and generate ddl.
 
 ## Usage
