@@ -6,7 +6,25 @@
 
 A tool to generate ddl base on source ddl and destination ddl. It can calculate difference and generate ddl.
 
-## Usage
+## Usage - Fetch information from spanner directly
+
+After v0.1.0, You can fetch table schema from spanner directly.
+
+You need to login by gcloud to get the credentials first:
+
+``` shell
+gcloud auth login
+```
+
+Then you can compare the whole database (${project_id}.${instance_id}.${database})
+
+``` shell
+spanner-ddl-patch --mode db --src product_project_id.product_instance_id.product_database --dst testing_product_id.testing_instance_id.testing_database
+```
+
+
+
+## Usage - By DDL
 
 Prepare a src.sql
 
@@ -34,7 +52,7 @@ Then install and run the tool
 
 ``` shell
 yarn global add spanner-ddl-patch
-spanner-ddl-patch --src ./src.sql --dst ./dst.sql
+spanner-ddl-patch --src ./src.sql --dst ./dst.sql --mode ddl
 ```
 
 Output: 
