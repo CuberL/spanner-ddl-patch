@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@google-cloud/spanner": "^5.15.2",
     "jest": "^27.2.2",
     "lodash": "^4.17.21",
     "yargs": "^17.2.1"
