@@ -1,5 +1,10 @@
 {
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "@google-cloud/spanner": "^5.15.2",
+    "jest": "^27.2.2",
+>>>>>>> 63cf74d (Add spanner client)
     "lodash": "^4.17.21",
     "yargs": "^17.2.1"
   },
