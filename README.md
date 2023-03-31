@@ -16,7 +16,7 @@ You need to login by gcloud to get the credentials first:
 gcloud auth login
 ```
 
-Then you can compare the whole database (${project_id}.${instance_id}.${database})
+Then you can compare the whole database `(${project_id}.${instance_id}.${database})`
 
 ``` shell
 spanner-ddl-patch --mode db --src product_project_id.product_instance_id.product_database --dst testing_product_id.testing_instance_id.testing_database
