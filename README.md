@@ -64,3 +64,4 @@ alter table users drop column age;
 
 ## Known issues
 - Do not support to patch the options
+- Do not support to create/drop tables
